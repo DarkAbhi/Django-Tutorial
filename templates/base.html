@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Django Tutorial Title</title>
-  </head>
+<html lang="en">
+  <html>
+    <head>
+      <title>Django Tutorial Title</title>
+      <div style="border: 2px solid #000">
+        <h2>This is the header</h2>
+      </div>
+    </head>
 
-  <body>
-    <h1>This is the body.</h1>
-  </body>
+    <body>
+      {% block content %} {% endblock content %}
+    </body>
 
-  <footer><h3>This is a footer</h3></footer>
+    <footer>
+      <div style="border: 2px solid #000">
+        <h2>This is the footer</h2>
+      </div>
+    </footer>
+  </html>
 </html>
