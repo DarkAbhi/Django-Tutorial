@@ -4,5 +4,17 @@ from django.shortcuts import render
 
 
 def home_screen_view(request):
-    print(request.headers)
-    return render(request, "personal/home.html", {})
+
+    list_of_values = []
+    list_of_values.append("first entry")
+    list_of_values.append("second entry")
+    list_of_values.append("third entry")
+    list_of_values.append("first entry")
+
+    context = {
+        'some_string': "This is the string",
+        'some_number': 1245,
+        'list_of_values': list_of_values
+    }
+
+    return render(request, "personal/home.html", context)

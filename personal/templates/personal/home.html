@@ -4,6 +4,7 @@
 
   <p>Random stuff put here and there.</p>
 
-  {% include 'personal/snippets/body_snippet.html'%}
+  {{some_string}} <br />
+  {% for item in list_of_values %} {% include 'personal/snippets/body_snippet.html' with value=item %} {% endfor %}
 </div>
 {% endblock content %}
