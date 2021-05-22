@@ -5,6 +5,8 @@
   <p>Random stuff put here and there.</p>
 
   {{some_string}} <br />
-  {% for question in questions %} {% include 'personal/snippets/body_snippet.html' with value=question %} {% endfor %}
+  {% for account in accounts %} 
+  <p>{{account}}
+  {% endfor %}
 </div>
 {% endblock content %}
